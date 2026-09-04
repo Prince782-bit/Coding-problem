@@ -1,108 +1,8 @@
- # 9: count the frequency of char in a string.
-# s = "hello"
-# fre = {char: s.count(char) for char in set(s)}
-# print(fre)
-
-
-
 # # 10: revers words in a setence
 # s = "hello python"
 # rev = " ".join(s.split()[::-1])
 # print(rev)
 
-
-# 11: find common element in two list
-# list1 = [1,2,3,4,5]
-# list2 = [3,4,5,6,7]
-# common = list(set(list1) & set(list2))
-# print(common)
-
-
-
-# # 12: find the most frequent element in a list
-# lst = [1,2,3,4,3,3,3,3,2]
-# most = max(set(lst), key=lst.count)
-# print(most)
-
-
-
-# # 13: find the first non repeating char
-# s = "swiss"
-# for char in s:
-#     if s.count(char) == 1:
-#         print(char)
-#         break
-
-
-
-# # 14: find the substring of a string
-# s = "abc"
-# sub = [s[i:j] for i in range(len(s)) for j in range(i+1, len(s)+1)]
-# print(sub)
-
-
-# # 15: merge two sorted list
-# list1 = [1,3,5]
-# list2 = [2,4,6]
-# merged = sorted(list1 + list2)
-# print(merged)
-
-
-# # 16: swap two number without a temporary variable
-# a, b = 5, 10
-# a, b = b, a
-# print(a, b)
-
-
-# # remove duplicates from the list
-# lst = [1,2,2,3,3,4,4,5,6]
-# unique = list(set(lst))
-# print(unique)
-
-
-# # flatten a nested list
-# nested = [[1,2], [3,4], [5]]
-# flat = [item for sublist in nested for item in sublist]
-# print(flat)
-
-
-# # List comprehension with condition :
-# result = [x for x in range(10) if x%2 == 0]
-# print(result)
-
-
-# # Exception handling
-# try:
-#     x = 1/0
-# except ZeroDivisionError as e:
-#     print("Error:",e)
-
-
-
-# # using xip to combine two lists
-# names = ["a","b","c"]
-# score = [90,80,70]
-# combine = dict(zip(names,score))
-# print(combine)
-
-
-
-# # count vowel in string
-# s = "hello vikas bhai"
-# vowel = "AEUIOaeuio"
-# count = sum(1 for char in s if char in vowel)
-# print(count)
-
-
-# # convert a string to title case
-# s = "hello python"
-# print(s.title())
-
-
-# # find the largest and smallest number
-# lst = [4,2,7,8,9,1]
-# print("Max:",max(lst))
-# print("Min:", min(lst))
 
 
 # # check if a number is prime.
@@ -132,44 +32,6 @@
 
 
 
-# # Convert celsius to fahrenheit: 0 celsius = 32 fahrenheit:
-# celsius = int(input("Enter temperature in celsius: "))
-# fahrenheit = (celsius * (9/5))+32
-# print("The converted value is", fahrenheit, "Fahrenheit")
-
-
-
-# # check if a number is positive, negative or 0:
-# num = int(input("Enter a number here:"))
-# if num > 0:
-#     print("It is a positive number")
-# elif num == 0:
-#     print("It is zero")
-# else:
-#     print("It is a negative number")
-
-
-
-# # Find largest among three number:
-# num1 = int(input("Enter 1st number here: "))
-# num2 = int(input("Enter 2st number here: "))
-# num3 = int(input("Enter 3st number here: "))
-# if (num1 > num2) and (num1 > num3):
-#     print(num2, "is the largest number")
-# elif (num2 > num1) and (num2 > num3):
-#     print(num2, "is the largest number")
-# else:
-#     print(num3, "is the largest number")
-
-
-
-# # check if a number is odd or even:
-# num = int(input("Enter a number here: "))
-# if num % 2 == 0:
-#     print("It is an even number")
-# else:
-#     print("It is an odd number")
-
 
 
 # # reverse string:
@@ -185,18 +47,6 @@
 # str = "Where are you going"
 # print(str.split())
 
-
-# # max repeated char:
-# str = "vikaasssssssssss"
-# ch = {}
-# for i in str:
-#     if i in ch:
-#         ch[i] += 1
-#     else:
-#         ch[i] = 1
-# print(ch)
-# max_char = max(ch,key=ch.get)
-# print(max_char)
 
 
 # # reverse string:
@@ -249,13 +99,6 @@
 
 
 
-# # 2: generate random password in string
-# import random
-# import string
-# def gen(length):
-#     pas = " ".join(random.choices(string.ascii_letters + string.digits, k = length))
-#     return pas
-# print(gen(4))
 
 
 # # 3: count number of vowels in string.
@@ -291,18 +134,6 @@
 # str = "where are you going"
 # print(str.split(" "))
 
-
-# # 6: find the max repeated char
-# str = "viskasssssssssssssssaaaaaaaaaaa"
-# ch = {}
-# for i in str:
-#     if i in ch:
-#         ch[i] += 1
-#     else:
-#         ch[i] = 1
-# print(ch)
-# max_char = max(ch, key=ch.get)
-# print(max_char)
 
 
 
@@ -350,10 +181,6 @@
 
 
 
-# # 11: sort the list
-# list = [3,5,1,8,2]
-# list.sort()
-# print(list)
 
 
 
@@ -394,9 +221,6 @@
 #       ''')
 
 
-# # 13: Use REPL and print the table of 5 unsing it.
-# for i in range(1,11):
-#     print(f"5 x {i} = {5 * i}")
 
 
 
@@ -410,16 +234,6 @@
 
 
 
-# # 15: write a program to add two numbers.
-# a = 1 
-# b = 5
-# print(a + b)
-
-
-# # 16: Find remainder when a number is divided by z.
-# a = 34
-# b = 5
-# print("Remainder:",a % b)
 
 
 # # 17: check the type of variable assigned using int(input()) function.
